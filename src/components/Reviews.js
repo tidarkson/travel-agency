@@ -24,7 +24,7 @@ function Reviews() {
                 <div key={id} className="outline-offset-0 rounded-lg p-5 shadow shadow-slate-300">
                   <h2 className='text-xl font-bold my-5'>{title}</h2>
                   <p className='text-sm'>{isTruncated ? `${desc.substring(0, 50)}...`: `${desc}`}</p>
-                  <button className='font-bold text-center text-xs pb-3 md:p-5' onClick={()=>setIsTruncated(!isTruncated)}>view more</button>
+                  <button className='font-bold bg-inherit text-center text-xs pb-3 md:p-5' onClick={()=>setIsTruncated(!isTruncated)}>view more</button>
                   <div className='flex items-center justify-start md:my-3'>
                     <AiFillStar className='fill-yellow-500'/>
                     <AiFillStar className='fill-yellow-500'/>

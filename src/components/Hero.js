@@ -23,12 +23,12 @@ function Hero() {
           <img src={Logo} alt="Logo" />
 
           <div className='flex items-center justify-center gap-5'>
-            <button className='hidden md:block px-3 py-2 items-center justify-center rounded-lg'>Login</button>
+            <button className='hidden md:block px-3 py-2 items-center justify-center rounded-lg bg-inherit'>Login</button>
             <button className=' text-slate-900 bg-white px-3 py-2 items-center justify-center rounded-lg'>Sign up</button>
           </div>
         </header>
 
-        <div className='flex flex-col justify-center items-center my-20 gap-5 mb-8 text-black'>
+        <div className='flex flex-col justify-center items-center my-20 gap-5 mb-8'>
           <h3 className='text-2xl md:text-3xl font-bold'>Helping others</h3>
           <h1 className='text-4xl md:text-7xl font-bold uppercase tracking-widest'>Live & Travel</h1>
           <p>Special offers to suit your plan</p>
@@ -38,11 +38,11 @@ function Hero() {
           <div className='flex items-center justify-start gap-5 my-5'>
             <div className='flex items-center gap-2'>
               
-              <button className='font-semibold text-sm bg-teal-500 px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosAirplane />Find Flight</button>
+              <button className='font-semibold text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosAirplane />Find Flight</button>
             </div>
             <div className='flex items-center gap-2'>
               
-              <button className='font-semibold text-white text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosBed />Find Stays</button>
+              <button className='bg-inherit font-semibold text-white text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosBed />Find Stays</button>
             </div>
           </div>
 
@@ -58,10 +58,10 @@ function Hero() {
           <div className='flex items-center justify-end gap-5 my-5'>
             <div className='flex items-center justify-center gap-2'>
               
-              <button className='font-semibold text-sm px-3 py-2 flex items-center text-white justify-center gap-2 rounded-lg'><IoIosAdd /> Add Promo Code</button>
+              <button className='font-semibold text-sm px-3 py-2 flex items-center text-white justify-center gap-2 rounded-lg bg-inherit'><IoIosAdd /> Add Promo Code</button>
             </div>
             <div className=''>
-              <button className='font-semibold text-sm bg-teal-500 px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane />Show Flights</button>
+              <button className='font-semibold text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane />Show Flights</button>
             </div>
           </div>
         </div>

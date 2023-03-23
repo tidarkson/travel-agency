@@ -47,7 +47,7 @@ function PlanTrip() {
                         <div className='text-white flex flex-col items-center text-center gap-5 mx-auto mt-60 mb-20 lg:mt-80 max-w-lg backdrop-brightness-50 p-5 rounded-2xl'>
                             <h2 className='text-4xl font-bold tracking-widest'>Flights</h2>
                             <p className='text-sm'>Search Flights & Places Hire to our most popular destinations</p>
-                            <button className='font-semibold text-sm text-black bg-teal-500 px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane /> Show flights
+                            <button className='font-semibold text-sm text-black px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane /> Show flights
                             </button>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ function PlanTrip() {
                         <div className='text-white flex flex-col items-center text-center gap-5 mx-auto mt-60 mb-20 lg:mt-80 max-w-lg backdrop-brightness-50 p-5 rounded-2xl'>
                             <h2 className='text-4xl font-bold tracking-widest'>Hotels</h2>
                             <p className='text-sm'>Search Flights & Places Hire to our most popular destinations</p>
-                            <button className='font-semibold text-sm text-black bg-teal-500 px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane />Book now</button>
+                            <button className='font-semibold text-sm text-black px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane />Book now</button>
                         </div>
                     </div>
                 </div>
