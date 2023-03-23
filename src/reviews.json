@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "title":"“A real sense of community, nurtured”",
+            "desc":"Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
+            "name":"Olga",
+            "tag":"Weave Studios – Kai Tak",
+            "image": "./images/Rectangle 36-1.png",
+            "google": "./images/google.png",
+            "id": "1"
+        },
+        {
+            "title":"“The facilities are superb. Clean, slick, bright.”",
+            "desc":"“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle",
+            "name":"Thomas",
+            "tag":"Weave Studios – Olympic",
+            "image": "./images/Rectangle 36-2.png",
+            "google": "./images/google.png",
+            "id": "2"
+        },
+        {
+            "title":"“A real sense of community, nurtured”",
+            "desc":"Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
+            "name":"Elliot",
+            "tag":"Weave Studios – Kai Tak",
+            "image": "./images/Rectangle 36.png",
+            "google": "./images/google.png",
+            "id": "3"
+        }
+    ]
+}

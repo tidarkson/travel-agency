@@ -1,0 +1,110 @@
+{
+    "data" : [
+        {
+            "id": 1,
+            "title": "Istanbul, Turkey",
+            "image":"./images/Rectangle 3-1.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 2,
+            "title": "Paris, Frace",
+            "image":"./images/Rectangle 3-2.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 3,
+            "title": "Baku, Azerbaijan",
+            "image":"./images/Rectangle 3-3.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 4,
+            "title": "Male, Maldives",
+            "image":"./images/Rectangle 3-4.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 5,
+            "title": "Sydney, Australia",
+            "image":"./images/Rectangle 3.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 6,
+            "title": "New York, US",
+            "image":"./images/Rectangle 4-1.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 7,
+            "title": "London, UK",
+            "image":"./images/Rectangle 4-2.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 8,
+            "title": "Dubai, UAE",
+            "image":"./images/Rectangle 4-3.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 9,
+            "title": "Akwa Ibom, Nigeria",
+            "image":"./images/Rectangle 4.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+        {
+            "id": 10,
+            "title": "London, UK",
+            "image":"./images/Rectangle 4-2.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 11,
+            "title": "Dubai, UAE",
+            "image":"./images/Rectangle 4-3.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        },
+
+        {
+            "id": 12,
+            "title": "Akwa Ibom, Nigeria",
+            "image":"./images/Rectangle 4.png",
+            "tag1": "Flights",
+            "tag2": "Hotels",
+            "tag3": "Resort"
+        }
+    ]
+}

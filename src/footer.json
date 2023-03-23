@@ -1,0 +1,30 @@
+{
+    "data":
+    [
+        {   
+            "id": 1,
+            "title": "Our Destinations",
+            "contents": ["Canada", "Alaska", "France", "Iceland"]
+        },
+        {
+            "id": 2,
+            "title": "Our Activities",
+            "contents": ["Northern Lights", "Criusing & Sailing", "Multi-activities", "Kayaking"]
+        },
+        {
+            "id": 3,
+            "title": "Travel Blogs",
+            "contents": ["Bali travel guide", "Sri-Lanka travel guide", "Peru travel guide", "Akwa Ibom travel guide"]
+        },
+        {
+            "id": 4,
+            "title": "About Us",
+            "contents": ["Our story", "Work with us"]
+        },
+        {
+            "id": 5,
+            "title": "Contact Us",
+            "contents": ["golobe@email.com", "tidarkson@gmail.com"]
+        }
+    ]
+}
