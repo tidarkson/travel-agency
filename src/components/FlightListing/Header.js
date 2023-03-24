@@ -1,13 +1,13 @@
 import React from 'react'
 import { IoIosBed, IoIosAirplane, IoIosHeart } from 'react-icons/io'
-import Logo from '../../images/Logo.png'
+import Logo from '../../images/golobe.png'
 import { Link } from 'react-router-dom'
 
 
 function Header() {
   return (
     <>
-      <header className='flex items-center justify-between backdrop-brightness-50 p-5'>
+      <header className='flex items-center justify-between p-5'>
         <div className='hidden md:block md:flex items-center justify-center gap-5'>
           <div className='flex items-center gap-2'>
             <IoIosAirplane />

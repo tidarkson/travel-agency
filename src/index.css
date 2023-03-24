@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Gideon Roman', cursive;
-  
+  font-family: 'Alegreya', serif;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow-x: hidden; */

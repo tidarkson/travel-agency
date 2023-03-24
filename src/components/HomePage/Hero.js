@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '../../images/hero.png'
+import hero from '../../images/pexels1.png'
 import Logo from '../../images/Logo.png'
 import { IoIosBed, IoIosAirplane, IoIosAdd, IoIosPaperPlane } from 'react-icons/io'
 import { Link } from 'react-router-dom'
@@ -10,7 +10,7 @@ function Hero() {
     <div className='md:m-5'>
       <div style={{ backgroundImage: `url(${hero})` }} className="bg-no-repeat text-white p-5 md:p-10 bg-cover md:rounded-xl">
         <header className='flex items-center justify-between backdrop-brightness-50 p-5 rounded-lg'>
-          <div className='hidden md:block flex items-center justify-center gap-5'>
+          <div className='hidden md:block md:flex items-center justify-center gap-5'>
             <div className='flex items-center gap-2'>
               <IoIosAirplane />
               <p><Link to={'/flight-listings'}>Find Flight</Link></p>

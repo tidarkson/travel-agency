@@ -13,6 +13,11 @@ function Listings() {
   const [value, setValue] = useState(0)
   const details = tabs.data[value].details
   const [toggleFilter, setToggleFilter] = useState(false)
+    const [departure, setDeparture] = useState(false)
+  const [rating, setRating] = useState(false)
+  const [airline, setAirline] = useState(false)
+  const [trips, setTrips] = useState(false)
+
 
   return (
     <>
@@ -38,7 +43,7 @@ function Listings() {
               <div className='my-5 w-60 pb-10 border-b border-slate-400'>
                 <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
                   <p className='font-bold' >Price</p>
-                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                  {toggleFilter ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
 
                 {toggleFilter &&
@@ -53,11 +58,11 @@ function Listings() {
               </div>
               <div className='my-5 w-60 pb-10 border-b border-slate-400'>
 
-                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                <div className='flex items-center justify-between' onClick={() => setDeparture(!departure)}>
                   <p className='font-bold'>Departure Time</p>
-                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                  {departure ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
-                {toggleFilter &&
+                {departure &&
                   <>
                     <input type="range" />
                     <div className='flex items-center justify-between w-60'>
@@ -69,12 +74,12 @@ function Listings() {
               </div>
 
               <div className='my-5 w-60 pb-10 border-b border-slate-400'>
-                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                <div className='flex items-center justify-between' onClick={() => setRating(!rating)}>
                   <p className='font-bold'>Rating</p>
-                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                  {rating ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
 
-                {toggleFilter &&
+                {rating &&
                   <>
                     <div className='flex items-center justify-start gap-10 pt-3'>
                       <small className='border rounded px-1 border-teal-400'>+1</small>
@@ -87,12 +92,12 @@ function Listings() {
               </div>
 
               <div className='my-5 w-60 pb-10 border-b border-slate-400'>
-                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                <div className='flex items-center justify-between' onClick={() => setAirline(!airline)}>
                   <p className='font-bold'>Airlines</p>
-                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                  {airline ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
 
-                {toggleFilter &&
+                {airline &&
                   <>
                     <div className='flex items-center justify-start gap-4 pt-4'>
                       <input type="checkbox" />
@@ -115,13 +120,13 @@ function Listings() {
               </div>
 
               <div className='my-5 w-60 pb-10 border-b border-slate-400'>
-                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                <div className='flex items-center justify-between' onClick={() => setTrips(!trips)}>
                   <p className='font-bold'>Trips</p>
-                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                  {trips ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </div>
 
 
-                {toggleFilter &&
+                {trips &&
                   <>
                     <div className='flex items-center justify-start gap-4 pt-4'>
                       <input type="checkbox" />
