@@ -2,7 +2,7 @@
     "data": [
         {
             "id":1,
-            "button": "Cheapest",
+            "button": "All Flight",
             "details": [
                 {
                     "id": 1,
@@ -47,6 +47,50 @@
                     "stops" : "non stop",
                     "duration": "2h 28min",
                     "link": "View Deals"
+                },
+                {
+                    "id" : 5,
+                    "image": "./images/british.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 6,
+                    "image": "./images/turkish.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 7,
+                    "image": "./images/france.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 8,
+                    "image": "./images/lufthansa.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
                 }
             ]
         },
@@ -57,8 +101,8 @@
             "button": "Best",
             "details": [
                 {
-                    "id" :1,
-                    "image": "./images/emirates.png",
+                    "id" : 1,
+                    "image": "./images/turkish.png",
                     "price": 104,
                     "rating": "Very Good",
                     "departure": "12:00pm",
@@ -77,6 +121,17 @@
                     "stops" : "non stop",
                     "duration": "2h 28min",
                     "link": "View Deals"
+                },
+                {
+                    "id" : 3,
+                    "image": "./images/etihad.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
                 }
             ]
         },
@@ -88,6 +143,67 @@
                 {
                     "id" : 1,
                     "image": "./images/dubai.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 2,
+                    "image": "./images/lufthansa.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                }
+            ]
+        },
+        {
+            "id":1,
+            "button": "Cheapest",
+            "details": [
+                {
+                    "id" : 5,
+                    "image": "./images/british.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 6,
+                    "image": "./images/turkish.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 7,
+                    "image": "./images/france.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 8,
+                    "image": "./images/lufthansa.png",
                     "price": 104,
                     "rating": "Very Good",
                     "departure": "12:00pm",

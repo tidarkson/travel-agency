@@ -40,7 +40,7 @@ function Listings() {
             <h3 className='text-xl font-bold'>Filters</h3>
 
             <div className='grid md:grid-cols-3 lg:grid-cols-1 gap-10'>
-              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+              <div className='pb-5 w-60 border-b border-slate-400'>
                 <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
                   <p className='font-bold' >Price</p>
                   {toggleFilter ? <IoIosArrowUp /> : <IoIosArrowDown />}
@@ -56,7 +56,7 @@ function Listings() {
                   </>
                 }
               </div>
-              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+              <div className='pb-5 w-60 border-b border-slate-400'>
 
                 <div className='flex items-center justify-between' onClick={() => setDeparture(!departure)}>
                   <p className='font-bold'>Departure Time</p>
@@ -73,7 +73,7 @@ function Listings() {
                 }
               </div>
 
-              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+              <div className='pb-5 w-60 border-b border-slate-400'>
                 <div className='flex items-center justify-between' onClick={() => setRating(!rating)}>
                   <p className='font-bold'>Rating</p>
                   {rating ? <IoIosArrowUp /> : <IoIosArrowDown />}
@@ -91,7 +91,7 @@ function Listings() {
                 }
               </div>
 
-              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+              <div className='pb-5 w-60 border-b border-slate-400'>
                 <div className='flex items-center justify-between' onClick={() => setAirline(!airline)}>
                   <p className='font-bold'>Airlines</p>
                   {airline ? <IoIosArrowUp /> : <IoIosArrowDown />}
@@ -119,7 +119,7 @@ function Listings() {
                 }
               </div>
 
-              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+              <div className='pb-5 w-60 border-b border-slate-400'>
                 <div className='flex items-center justify-between' onClick={() => setTrips(!trips)}>
                   <p className='font-bold'>Trips</p>
                   {trips ? <IoIosArrowUp /> : <IoIosArrowDown />}
@@ -162,12 +162,12 @@ function Listings() {
                   </>
                 )
               })}
-              <li className='flex items-center justify-start gap-2 shadow-lg px-5 py-2'><GiHamburgerMenu /> Other Sort</li>
+              {/* <li className='flex items-center justify-start gap-2 shadow-lg px-5 py-2'><GiHamburgerMenu /> Other Sort</li> */}
             </ul>
 
             <div className=''>
               <div className='flex items-center justify-between my-8'>
-                <small>showing {details.length} of <span className='text-red-400'>257 airways</span></small>
+                <small>showing {details.length} of <span className='text-red-400'>8 airways</span></small>
                 <small>sort by <span className='font-bold'>Recommended</span></small>
               </div>
               {details.map((detail) => {
