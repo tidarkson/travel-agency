@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import logo from '../images/footer logo.png'
-import mailbox from '../images/mailbox.png'
-import data from '../footer.json'
+import logo from '../../images/footer logo.png'
+import mailbox from '../../images/mailbox.png'
+import data from '../../footer.json'
 import {FaFacebook, FaTwitter, FaYoutube, FaInstagram} from 'react-icons/fa'
 
 
@@ -20,7 +20,7 @@ function Footer() {
                         <button className='bg-emerald-900 text-white px-3 py-2 text-sm rounded'>subscribe</button>
                     </div>
                 </div>
-                <div className='md:p-10'>
+                <div className='md:px-10'>
                     <img src={mailbox} alt="" className='w-full' />
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import data from '../reviews.json'
+import data from '../../reviews.json'
 import {AiFillStar} from 'react-icons/ai'
 
 function Reviews() {

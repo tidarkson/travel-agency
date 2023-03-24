@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import data from '../trip.json'
+import data from '../../trip.json'
 import { IoIosPaperPlane } from 'react-icons/io'
 
 

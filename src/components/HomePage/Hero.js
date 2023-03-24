@@ -1,7 +1,8 @@
 import React from 'react'
-import hero from '../images/hero.png'
-import Logo from '../images/Logo.png'
+import hero from '../../images/hero.png'
+import Logo from '../../images/Logo.png'
 import { IoIosBed, IoIosAirplane, IoIosAdd, IoIosPaperPlane } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 
 function Hero() {
@@ -12,7 +13,7 @@ function Hero() {
           <div className='hidden md:block flex items-center justify-center gap-5'>
             <div className='flex items-center gap-2'>
               <IoIosAirplane />
-              <p>Find Flight</p>
+              <p><Link to={'/flight-listings'}>Find Flight</Link></p>
             </div>
             <div className='flex items-center gap-2'>
               <IoIosBed />

@@ -28,11 +28,29 @@ button {
 }
 
 .plantrip {
-  background-color: red;
   background: url('./images/flight.png')no-repeat center/cover;
 }
 
 .plantrip1 {
-  background-color: red;
   background: url('./images/hotels.png')no-repeat center/cover;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+   appearance: none;
+   background: transparent;
+   cursor: pointer;
+   width: 15rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 2px;  
+}
+
+input[type="range"]::-webkit-slider-thumb {
+   margin-top: -6px; /* Centers thumb on the track */
+   /*custom styles*/
+   background-color: #8DD3BB;
 }

@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id":1,
+            "button": "Cheapest",
+            "details": [
+                {
+                    "id": 1,
+                    "image": "./images/emirates.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id": 2,
+                    "image": "./images/dubai.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id": 3,
+                    "image": "./images/qatar.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 4,
+                    "image": "./images/etihad.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                }
+            ]
+        },
+
+
+        {
+            "id":2,
+            "button": "Best",
+            "details": [
+                {
+                    "id" :1,
+                    "image": "./images/emirates.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                },
+                {
+                    "id" : 2,
+                    "image": "./images/qatar.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                }
+            ]
+        },
+        
+        {
+            "id":3,
+            "button": "Quickest",
+            "details": [
+                {
+                    "id" : 1,
+                    "image": "./images/dubai.png",
+                    "price": 104,
+                    "rating": "Very Good",
+                    "departure": "12:00pm",
+                    "arrival": "1:28pm",
+                    "stops" : "non stop",
+                    "duration": "2h 28min",
+                    "link": "View Deals"
+                }
+            ]
+        }
+    ]
+}
