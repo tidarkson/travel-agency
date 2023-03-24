@@ -153,11 +153,11 @@ function Listings() {
 
                 return (
                   <>
-                    <li key={id} className="shadow-xl "><button className={`${index === value && "border-b-4 border-teal-300"} font-bold bg-inherit text-center`} onClick={() => setValue(index)}>{button}</button></li>
+                    <li key={id} className={`${index === value && "border-b-4 border-teal-300"} shadow shadow-slate-300`}><button className='font-bold bg-inherit text-center px-5 py-2' onClick={() => setValue(index)}>{button}</button></li>
                   </>
                 )
               })}
-              <li className='flex items-center justify-start gap-2 shadow-lg'><GiHamburgerMenu /> Other Sort</li>
+              <li className='flex items-center justify-start gap-2 shadow-lg px-5 py-2'><GiHamburgerMenu /> Other Sort</li>
             </ul>
 
             <div className=''>
@@ -169,10 +169,10 @@ function Listings() {
                 const { id, image, price, rating, departure, arrival, stops, duration, link } = detail
 
                 return (
-                  <div key={id} className="md:flex items-center justify-start rounded-xl shadow-lg md:p-5">
+                  <div key={id} className="md:flex items-center justify-start rounded-xl shadow shadow-slate-300 my-2 p-2 md:p-5">
                     <img src={image} alt="" className='first:mb-6 ' />
                     <div className='md:px-10'>
-                      <div className='md:flex items-center justify-between md:gap-60 xl:gap-72 px-2'>
+                      <div className='md:flex items-center justify-between md:gap-54 lg:gap-72 px-2'>
                         <div className='flex items-center justify-start gap-3'>
                           <small className='border rounded px-1 border-teal-400'>4.2</small>
                           <small className='font-bold'>{rating}</small>
@@ -192,9 +192,9 @@ function Listings() {
                         <small className='font-bold'>{duration}</small>
                       </div>
 
-                      <div className='flex flex-row items-center justify-start gap-10 my-10 p-3'>
+                      <div className='flex items-center justify-start gap-5 my-10 py-3'>
                         <small className='border rounded p-2 text-lg border-teal-400'><AiOutlineHeart /></small>
-                        <button className='text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg w-full'>{link}</button>
+                        <button className='text-sm px-3 py-2 rounded-lg w-full'>{link}</button>
                       </div>
                     </div>
                   </div>
