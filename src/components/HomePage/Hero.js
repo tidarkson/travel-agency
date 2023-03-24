@@ -39,7 +39,7 @@ function Hero() {
           <div className='flex items-center justify-start gap-5 my-5'>
             <div className='flex items-center gap-2'>
               
-              <button className='font-semibold text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosAirplane />Find Flight</button>
+            <Link to={'/flight-listings'}><button className='font-semibold text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosAirplane />Find Flight</button></Link>  
             </div>
             <div className='flex items-center gap-2'>
               

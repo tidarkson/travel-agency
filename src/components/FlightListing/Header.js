@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
       <header className='flex items-center justify-between backdrop-brightness-50 p-5'>
-        <div className='flex items-center justify-center gap-5'>
+        <div className='hidden md:block md:flex items-center justify-center gap-5'>
           <div className='flex items-center gap-2'>
             <IoIosAirplane />
             <p><Link to={'/flight-listings'}>Find Flight</Link></p>

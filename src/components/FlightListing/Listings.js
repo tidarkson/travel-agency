@@ -4,13 +4,13 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import 'react-range-slider-input/dist/style.css';
 import data from '../../flightListing.json'
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
-import { GiHamburgerMenu} from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 
 function Listings() {
 
   const [tabs] = useState(data)
-  const [value, setValue] = useState(1)
+  const [value, setValue] = useState(0)
   const details = tabs.data[value].details
   const [toggleFilter, setToggleFilter] = useState(false)
 
@@ -30,135 +30,137 @@ function Listings() {
         </div>
 
 
-        <div className=' flex gap-10'>
+        <div className=' lg:flex gap-10'>
           <div className='flex-none'>
             <h3 className='text-xl font-bold'>Filters</h3>
 
-            <div className='my-5 w-60 pb-10 border-b border-slate-400'>
-              <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
-                <p className='font-bold' >Price</p>
-                {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp/>}
+            <div className='grid md:grid-cols-3 lg:grid-cols-1 gap-10'>
+              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                  <p className='font-bold' >Price</p>
+                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                </div>
+
+                {toggleFilter &&
+                  <>
+                    <input type="range" value={5} />
+                    <div className='flex items-center justify-between w-60'>
+                      <small className='text-xs'>$50</small>
+                      <small className='text-xs'>$1200</small>
+                    </div>
+                  </>
+                }
+              </div>
+              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+
+                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                  <p className='font-bold'>Departure Time</p>
+                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                </div>
+                {toggleFilter &&
+                  <>
+                    <input type="range" />
+                    <div className='flex items-center justify-between w-60'>
+                      <small className='text-xs'>12:00am</small>
+                      <small className='text-xs'>11:50pm</small>
+                    </div>
+                  </>
+                }
               </div>
 
-              {toggleFilter &&
-                <>
-                  <input type="range" value={5} />
-                  <div className='flex items-center justify-between w-60'>
-                    <small className='text-xs'>$50</small>
-                    <small className='text-xs'>$1200</small>
-                  </div>
-                </>
-              }
-            </div>
-            <div className='my-5 w-60 py-10 border-b border-slate-400'>
+              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                  <p className='font-bold'>Rating</p>
+                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                </div>
 
-              <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
-                <p className='font-bold'>Departure Time</p>
-                {toggleFilter ? <IoIosArrowDown /> :  <IoIosArrowUp/>}
-              </div>
-              {toggleFilter &&
-                <>
-                  <input type="range" />
-                  <div className='flex items-center justify-between w-60'>
-                    <small className='text-xs'>12:00am</small>
-                    <small className='text-xs'>11:50pm</small>
-                  </div>
-                </>
-              }
-            </div>
-
-            <div className='my-5 w-60 py-10 border-b border-slate-400'>
-              <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
-                <p className='font-bold'>Rating</p>
-                {toggleFilter ? <IoIosArrowDown /> :  <IoIosArrowUp/>}
+                {toggleFilter &&
+                  <>
+                    <div className='flex items-center justify-start gap-10 pt-3'>
+                      <small className='border rounded px-1 border-teal-400'>+1</small>
+                      <small className='border rounded px-1 border-teal-400'>+2</small>
+                      <small className='border rounded px-1 border-teal-400'>+3</small>
+                      <small className='border rounded px-1 border-teal-400'>+4</small>
+                    </div>
+                  </>
+                }
               </div>
 
-              {toggleFilter &&
-                <>
-                  <div className='flex items-center justify-start gap-10 pt-3'>
-                    <small className='border rounded px-1 border-teal-400'>+1</small>
-                    <small className='border rounded px-1 border-teal-400'>+2</small>
-                    <small className='border rounded px-1 border-teal-400'>+3</small>
-                    <small className='border rounded px-1 border-teal-400'>+4</small>
-                  </div>
-                </>
-              }
-            </div>
+              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                  <p className='font-bold'>Airlines</p>
+                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                </div>
 
-            <div className='my-5 w-60 py-10 border-b border-slate-400'>
-              <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
-                <p className='font-bold'>Airlines</p>
-                {toggleFilter ? <IoIosArrowDown /> :  <IoIosArrowUp/>}
+                {toggleFilter &&
+                  <>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>Emirates</p>
+                    </div>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>Fly Dubai</p>
+                    </div>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>Qatar</p>
+                    </div>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>Etihad</p>
+                    </div>
+                  </>
+                }
               </div>
 
-              {toggleFilter &&
-                <>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>Emirates</p>
-                  </div>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>Fly Dubai</p>
-                  </div>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>Qatar</p>
-                  </div>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>Etihad</p>
-                  </div>
-                </>
-              }
-            </div>
+              <div className='my-5 w-60 pb-10 border-b border-slate-400'>
+                <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
+                  <p className='font-bold'>Trips</p>
+                  {toggleFilter ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                </div>
 
-            <div className='my-5 w-60 py-10 border-b border-slate-400'>
-              <div className='flex items-center justify-between' onClick={() => setToggleFilter(!toggleFilter)}>
-                <p className='font-bold'>Trips</p>
-                {toggleFilter ? <IoIosArrowDown /> :  <IoIosArrowUp/>}
+
+                {toggleFilter &&
+                  <>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>Round Trip</p>
+                    </div>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>One Way</p>
+                    </div>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>Multi-City</p>
+                    </div>
+                    <div className='flex items-center justify-start gap-4 pt-4'>
+                      <input type="checkbox" />
+                      <p className='font-semibold text-sm'>My dates are flexible</p>
+                    </div>
+                  </>
+                }
               </div>
-
-
-              {toggleFilter &&
-                <>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>Round Trip</p>
-                  </div>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>One Way</p>
-                  </div>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>Multi-City</p>
-                  </div>
-                  <div className='flex items-center justify-start gap-4 pt-4'>
-                    <input type="checkbox" />
-                    <p className='font-semibold text-sm'>My dates are flexible</p>
-                  </div>
-                </>
-              }
             </div>
           </div>
 
 
-          <div className='grow px-10'>
-            <ul className='flex items-center justify-start gap-20 rounded shadow-lg p-5'>
+          <div className='grow md:px-10'>
+            <ul className='grid grid-cols-2 md:flex items-center justify-center text-center gap-20 rounded shadow-lg p-5'>
               {tabs.data.map((tab, index) => {
                 const { id, button } = tab
 
                 return (
                   <>
-                    <li key={id} className="border-r border-slate-400 pr-20 "><button className={`${index === value && "border-b-4 border-teal-300"} font-bold bg-inherit text-center`} onClick={() => setValue(index)}>{button}</button></li>
+                    <li key={id} className="shadow-xl "><button className={`${index === value && "border-b-4 border-teal-300"} font-bold bg-inherit text-center`} onClick={() => setValue(index)}>{button}</button></li>
                   </>
                 )
               })}
-              <li className='flex items-center justify-center gap-2'><GiHamburgerMenu/> Other Sort</li>
+              <li className='flex items-center justify-start gap-2 shadow-lg'><GiHamburgerMenu /> Other Sort</li>
             </ul>
 
-            <div>
+            <div className=''>
               <div className='flex items-center justify-between my-8'>
                 <small>showing {details.length} of <span className='text-red-400'>257 airways</span></small>
                 <small>sort by <span className='font-bold'>Recommended</span></small>
@@ -167,30 +169,30 @@ function Listings() {
                 const { id, image, price, rating, departure, arrival, stops, duration, link } = detail
 
                 return (
-                  <div key={id} className="flex items-center justify-start rounded-xl shadow-lg p-5">
-                    <img src={image} alt="" className='' />
-                    <div className='px-10'>
-                      <div className='flex items-center justify-between gap-72'>
+                  <div key={id} className="md:flex items-center justify-start rounded-xl shadow-lg md:p-5">
+                    <img src={image} alt="" className='first:mb-6 ' />
+                    <div className='md:px-10'>
+                      <div className='md:flex items-center justify-between md:gap-60 xl:gap-72 px-2'>
                         <div className='flex items-center justify-start gap-3'>
                           <small className='border rounded px-1 border-teal-400'>4.2</small>
                           <small className='font-bold'>{rating}</small>
                           <small>54 reviews</small>
                         </div>
 
-                        <div>
+                        <div className='my-5 md:my-0'>
                           <small>Starting from</small>
                           <h3 className='text-red-400 text-3xl font-bold'>${price}</h3>
                         </div>
                       </div>
 
-                      <div className='flex items-center justify-start gap-10'>
+                      <div className='flex items-center justify-start gap-10 px-2'>
                         <input type="checkbox" />
                         <small className='font-bold'>{departure} - {arrival}</small>
                         <small className='text-xs'>{stops}</small>
                         <small className='font-bold'>{duration}</small>
                       </div>
 
-                      <div className='flex flex-row items-center justify-start gap-10 my-10'>
+                      <div className='flex flex-row items-center justify-start gap-10 my-10 p-3'>
                         <small className='border rounded p-2 text-lg border-teal-400'><AiOutlineHeart /></small>
                         <button className='text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg w-full'>{link}</button>
                       </div>
