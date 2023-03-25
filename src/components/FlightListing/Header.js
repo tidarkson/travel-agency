@@ -15,7 +15,7 @@ function Header() {
           </div>
           <div className='flex items-center gap-2'>
             <IoIosBed />
-            <p>Find Stays</p>
+            <Link to={'/hotel-listings'}><p>Find Stays</p></Link>
           </div>
         </div>
 

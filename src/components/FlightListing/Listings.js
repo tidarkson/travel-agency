@@ -4,7 +4,6 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import 'react-range-slider-input/dist/style.css';
 import data from '../../flightListing.json'
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
-import { GiHamburgerMenu } from 'react-icons/gi'
 
 
 function Listings() {
@@ -13,7 +12,7 @@ function Listings() {
   const [value, setValue] = useState(0)
   const details = tabs.data[value].details
   const [toggleFilter, setToggleFilter] = useState(false)
-    const [departure, setDeparture] = useState(false)
+  const [departure, setDeparture] = useState(false)
   const [rating, setRating] = useState(false)
   const [airline, setAirline] = useState(false)
   const [trips, setTrips] = useState(false)

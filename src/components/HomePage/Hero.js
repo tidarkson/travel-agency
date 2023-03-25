@@ -16,8 +16,8 @@ function Hero() {
               <p><Link to={'/flight-listings'}>Find Flight</Link></p>
             </div>
             <div className='flex items-center gap-2'>
-              <IoIosBed />
-              <p>Find Stays</p>
+              <IoIosBed />            
+              <Link to={'/hotel-listings'}><p>Find Stays</p></Link>
             </div>
           </div>
 
