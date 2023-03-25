@@ -17,28 +17,28 @@ function HotelListingBody() {
                 <div className=''>
                     <h3 className='text-3xl font-bold tracking-wide'>Your recent searches </h3>
                     <div className='grid grid-cols-2 gap-2 md:flex items-center justify-between pt-5'>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center justify-start'>
                             <img src={Istanbul} alt="" />
                             <div className='pl-2 xl:px-5'>
                                 <p className='font-bold'>Istanbul, Turkey</p>
                                 <small>325 places</small>
                             </div>
                         </div>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center justify-start'>
                             <img src={sydney} alt="" />
                             <div className='pl-2 xl:px-5'>
                                 <p className='font-bold'>Sydney, Australia</p>
                                 <small>325 places</small>
                             </div>
                         </div>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center justify-start'>
                             <img src={baku} alt="" />
                             <div className='pl-2 xl:px-5'>
                                 <p className='font-bold'>Uyo, Nigeria</p>
                                 <small>325 places</small>
                             </div>
                         </div>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center justify-start'>
                             <img src={male} alt="" />
                             <div className='pl-2 xl:px-5'>
                                 <p className='font-bold'>Male, Maldives</p>
@@ -114,7 +114,7 @@ function HotelListingBody() {
                     </div>
 
                     <div className='grid xl:grid-cols-2 items-center justify-center my-10 gap-3'>
-                        <div className='lanka p-5 md:p-10 rounded-xl'>
+                        <div className='lanka p-5 md:p-10 rounded-xl  mb-5 md:mb-0'>
                             <div className='flex items-center justify-between'>
                                 <h2 className='text-4xl font-extrabold'>Backpacking Sri Lanka</h2>
                                 <p className='bg-white px-3 py-1 rounded-lg'>From <br /><span className='font-semibold text-xl'>$700</span></p>

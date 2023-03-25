@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import data from '../../trip.json'
 import { IoIosPaperPlane } from 'react-icons/io'
-
+import {Link} from 'react-router-dom'
 
 
 function PlanTrip() {
