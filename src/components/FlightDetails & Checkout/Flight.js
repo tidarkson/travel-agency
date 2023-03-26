@@ -13,6 +13,7 @@ import feature4 from '../../images/feature4.png'
 import feature5 from '../../images/feature5.png'
 import feature6 from '../../images/feature6.png'
 import emirate from '../../images/emirates-icon.png'
+import {Link} from 'react-router-dom'
 
 
 
@@ -21,7 +22,7 @@ function FlightDetails() {
     return (
         <>
             <Header />
-            <section className='px-20'>
+            <section className='px-2 md:px-5 xl:px-20'>
                 <article className='flex items-center justify-between py-2'>
                     <div>
                         <h2 className='font-bold text-2xl'>Emirates A380 Airbus</h2>
@@ -38,7 +39,7 @@ function FlightDetails() {
                         <div className='flex items-center justify-center gap-3'>
                             <button className='bg-inherit p-1 border border-teal-200 px-1 py-2 border border-teal-100'><AiOutlineHeart className='' /></button>
                             <button className='bg-inherit p-1 border border-teal-200 px-1 py-2 border border-teal-100'><BsFillShareFill  className=''/></button>
-                            <a href=""><button className='px-3 py-2 rounded'>Book now</button></a>
+                            <Link to='/checkout'><button className='px-3 py-2 rounded'>Book now</button></Link>
                         </div>
                     </div>
                 </article>
@@ -47,7 +48,7 @@ function FlightDetails() {
                         <img src={emirates} alt="" />
                     </div>
 
-                    <div className='flex items-center justify-between my-5'>
+                    <div className='md:flex items-center justify-between my-5'>
                         <h2 className='text-2xl font-bold'>Basic Features</h2>
                         <div className=''>
                             <div className='flex items-center'>
@@ -61,18 +62,18 @@ function FlightDetails() {
                         </div>
                     </div>
 
-                    <div className='flex items-center justify-between'>
-                        <img src={feature1} alt="" />
-                        <img src={feature2} alt="" />
-                        <img src={feature3} alt="" />
-                        <img src={feature4} alt="" />
+                    <div className='flex items-center justify-center md:justify-between gap-2'>
+                        <img src={feature1} alt=""  className='hidden md:block'/>
+                        <img src={feature2} alt="" className='hidden md:block'/>
+                        <img src={feature3} alt="" className=''/>
+                        <img src={feature4} alt="" className='hidden xl:block'/>
                         <img src={feature5} alt="" />
-                        <img src={feature6} alt="" />
+                        <img src={feature6} alt="" className='hidden md:block' />
                     </div>
                 </article>
 
                 <article>
-                    <div className='flight flex items-center justify-between rounded p-5'>
+                    <div className='flight md:flex items-center justify-between rounded p-5'>
                         <div>
                             <h3 className='text-2xl font-bold'>Emirates Airline Policies</h3>
                             <div className='flex items-center gap-1'>
@@ -99,15 +100,15 @@ function FlightDetails() {
                         <p>2h 28min</p>
                     </div>
 
-                    <div className='flex items-center justify-between my-5 px-5'>
-                        <div className='flex items-center justify-start gap-5 border border-slate-200 rounded px-5 py-2'>
+                    <div className='md:flex items-center justify-between my-5 px-5'>
+                        <div className='flex items-center justify-start gap-5 border md:border-slate-200 rounded px-5 py-2'>
                             <img src={emirate} alt="" />
                             <div>
                                 <h3 className='text-2xl font-semibold'>Emirates</h3>
                                 <small>Airbus A320</small>
                             </div>
                         </div>
-                        <div className='flex items-center justify-between gap-10'>
+                        <div className='flex items-center justify-between gap-10 my-2'>
                             <button className='bg-inherit'><IoIosAirplane/></button>
                             <button className='bg-inherit'><AiOutlineWifi/></button>
                             <button className='bg-inherit'><FaStopwatch/></button>
@@ -117,7 +118,7 @@ function FlightDetails() {
                     </div>
 
                     <div className='flex items-center justify-center gap-12'>
-                        <div className='flex items-center justify-center gap-3'>
+                        <div className='md:flex items-center justify-center gap-3'>
                             <h3 className='text-2xl font-semibold'>12pm</h3>
                             <small>Newark(EWR)</small>
                         </div>
@@ -126,7 +127,7 @@ function FlightDetails() {
                             <button className='flex items-center justify-between gap-3 bg-inherit'>&larr; <IoIosAirplane className='text-4xl'/> &rarr;</button>
                         </div>
 
-                        <div className='flex items-center justify-center gap-3'>
+                        <div className='md:flex items-center justify-center gap-3'>
                             <h3 className='text-2xl font-semibold'>12pm</h3>
                             <small>Newark(EWR)</small>
                         </div>
@@ -139,15 +140,15 @@ function FlightDetails() {
                         <p>2h 28min</p>
                     </div>
 
-                    <div className='flex items-center justify-between my-5 px-5'>
-                        <div className='flex items-center justify-start gap-5 border border-slate-200 rounded px-5 py-2'>
+                    <div className='md:flex items-center justify-between my-5 px-5'>
+                        <div className='flex items-center justify-start gap-5 border md:border-slate-200 rounded px-5 py-2'>
                             <img src={emirate} alt="" />
                             <div>
                                 <h3 className='text-2xl font-semibold'>Emirates</h3>
                                 <small>Airbus A320</small>
                             </div>
                         </div>
-                        <div className='flex items-center justify-between gap-10'>
+                        <div className='flex items-center justify-between gap-10 my-2'>
                             <button className='bg-inherit'><IoIosAirplane/></button>
                             <button className='bg-inherit'><AiOutlineWifi/></button>
                             <button className='bg-inherit'><FaStopwatch/></button>
@@ -157,7 +158,7 @@ function FlightDetails() {
                     </div>
 
                     <div className='flex items-center justify-center gap-12'>
-                        <div className='flex items-center justify-center gap-3'>
+                        <div className='md:flex items-center justify-center gap-3'>
                             <h3 className='text-2xl font-semibold'>12pm</h3>
                             <small>Newark(EWR)</small>
                         </div>
@@ -166,7 +167,7 @@ function FlightDetails() {
                             <button className='flex items-center justify-between gap-3 bg-inherit'>&larr; <IoIosAirplane className='text-4xl'/> &rarr;</button>
                         </div>
 
-                        <div className='flex items-center justify-center gap-3'>
+                        <div className='md:flex items-center justify-center gap-3'>
                             <h3 className='text-2xl font-semibold'>12pm</h3>
                             <small>Newark(EWR)</small>
                         </div>
