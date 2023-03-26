@@ -4,6 +4,7 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import 'react-range-slider-input/dist/style.css';
 import data from '../../flightListing.json'
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
+import { Link } from 'react-router-dom';
 
 
 function Listings() {
@@ -198,7 +199,7 @@ function Listings() {
 
                       <div className='flex items-center justify-start gap-5 my-10 py-3'>
                         <small className='border rounded p-2 text-lg border-teal-400'><AiOutlineHeart /></small>
-                        <button className='text-sm px-3 py-2 rounded-lg w-full'>{link}</button>
+                        <Link to={'/flight-details'}><button className='text-sm px-3 py-2 rounded-lg w-full'>{link}</button></Link>
                       </div>
                     </div>
                   </div>
