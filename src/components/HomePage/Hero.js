@@ -53,7 +53,7 @@ function Hero() {
             <input type="text" placeholder='Trip' className='text-sm p-2 border  rounded outline-none' />
             <input type="text" placeholder='Departure' className='text-sm p-2 border  rounded outline-none' />
             <input type="text" placeholder='Return' className='text-sm p-2 border  rounded outline-none' />
-            <input type="text" placeholder='Passenger-Class' className='text-sm text p-2 border  rounded outline-none' />
+            {/* <input type="text" placeholder='Passenger-Class' className='text-sm text p-2 border  rounded outline-none' /> */}
           </div>
 
           <div className='flex items-center justify-end gap-5 my-5'>
