@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '../../images/pexels3.png'
+import hero from '../../images/pexels3.webp'
 import { IoIosAdd, IoIosPaperPlane } from 'react-icons/io'
 import {RiHotelFill} from 'react-icons/ri'
 import { Link } from 'react-router-dom'

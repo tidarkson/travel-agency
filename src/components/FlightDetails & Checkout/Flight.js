@@ -2,8 +2,8 @@ import React from 'react'
 import { BsFillShareFill } from 'react-icons/bs'
 import { AiOutlineHeart, AiOutlineWifi } from 'react-icons/ai'
 import { FaStopwatch } from 'react-icons/fa'
-import {IoIosAirplane} from 'react-icons/io'
-import {MdOutlineAirlineSeatReclineNormal, MdFastfood} from 'react-icons/md'
+import { IoIosAirplane } from 'react-icons/io'
+import { MdOutlineAirlineSeatReclineNormal, MdFastfood } from 'react-icons/md'
 import Header from '../FlightListing/Header'
 import emirates from '../../images/emirates_plane.png'
 import feature1 from '../../images/feature1.png'
@@ -13,7 +13,7 @@ import feature4 from '../../images/feature4.png'
 import feature5 from '../../images/feature5.png'
 import feature6 from '../../images/feature6.png'
 import emirate from '../../images/emirates-icon.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -37,8 +37,10 @@ function FlightDetails() {
                     <div>
                         <h2 className='text-3xl font-bold text-red-400 text-end'>$240</h2>
                         <div className='flex items-center justify-center gap-3'>
-                            <button className='bg-inherit p-1 border border-teal-200 px-1 py-2 border border-teal-100'><AiOutlineHeart className='' /></button>
-                            <button className='bg-inherit p-1 border border-teal-200 px-1 py-2 border border-teal-100'><BsFillShareFill  className=''/></button>
+                            <div className='hidden md:block'>
+                                <button className='bg-inherit p-1 border border-teal-200 px-1 py-2 border border-teal-100'><AiOutlineHeart className='' /></button>
+                                <button className='bg-inherit p-1 border border-teal-200 px-1 py-2 border border-teal-100'><BsFillShareFill className='' /></button>
+                            </div>
                             <Link to='/checkout'><button className='px-3 py-2 rounded'>Book now</button></Link>
                         </div>
                     </div>
@@ -63,10 +65,10 @@ function FlightDetails() {
                     </div>
 
                     <div className='flex items-center justify-center md:justify-between gap-2'>
-                        <img src={feature1} alt=""  className='hidden md:block'/>
-                        <img src={feature2} alt="" className='hidden md:block'/>
-                        <img src={feature3} alt="" className=''/>
-                        <img src={feature4} alt="" className='hidden xl:block'/>
+                        <img src={feature1} alt="" className='hidden md:block' />
+                        <img src={feature2} alt="" className='hidden md:block' />
+                        <img src={feature3} alt="" className='' />
+                        <img src={feature4} alt="" className='hidden xl:block' />
                         <img src={feature5} alt="" />
                         <img src={feature6} alt="" className='hidden md:block' />
                     </div>
@@ -109,11 +111,11 @@ function FlightDetails() {
                             </div>
                         </div>
                         <div className='flex items-center justify-between gap-10 my-2'>
-                            <button className='bg-inherit'><IoIosAirplane/></button>
-                            <button className='bg-inherit'><AiOutlineWifi/></button>
-                            <button className='bg-inherit'><FaStopwatch/></button>
-                            <button className='bg-inherit'><MdFastfood/></button>
-                            <button className='bg-inherit'><MdOutlineAirlineSeatReclineNormal/></button>
+                            <button className='bg-inherit'><IoIosAirplane /></button>
+                            <button className='bg-inherit'><AiOutlineWifi /></button>
+                            <button className='bg-inherit'><FaStopwatch /></button>
+                            <button className='bg-inherit'><MdFastfood /></button>
+                            <button className='bg-inherit'><MdOutlineAirlineSeatReclineNormal /></button>
                         </div>
                     </div>
 
@@ -124,7 +126,7 @@ function FlightDetails() {
                         </div>
 
                         <div>
-                            <button className='flex items-center justify-between gap-3 bg-inherit'>&larr; <IoIosAirplane className='text-4xl'/> &rarr;</button>
+                            <button className='flex items-center justify-between gap-3 bg-inherit'>&larr; <IoIosAirplane className='text-4xl' /> &rarr;</button>
                         </div>
 
                         <div className='md:flex items-center justify-center gap-3'>
@@ -149,11 +151,11 @@ function FlightDetails() {
                             </div>
                         </div>
                         <div className='flex items-center justify-between gap-10 my-2'>
-                            <button className='bg-inherit'><IoIosAirplane/></button>
-                            <button className='bg-inherit'><AiOutlineWifi/></button>
-                            <button className='bg-inherit'><FaStopwatch/></button>
-                            <button className='bg-inherit'><MdFastfood/></button>
-                            <button className='bg-inherit'><MdOutlineAirlineSeatReclineNormal/></button>
+                            <button className='bg-inherit'><IoIosAirplane /></button>
+                            <button className='bg-inherit'><AiOutlineWifi /></button>
+                            <button className='bg-inherit'><FaStopwatch /></button>
+                            <button className='bg-inherit'><MdFastfood /></button>
+                            <button className='bg-inherit'><MdOutlineAirlineSeatReclineNormal /></button>
                         </div>
                     </div>
 
@@ -164,7 +166,7 @@ function FlightDetails() {
                         </div>
 
                         <div>
-                            <button className='flex items-center justify-between gap-3 bg-inherit'>&larr; <IoIosAirplane className='text-4xl'/> &rarr;</button>
+                            <button className='flex items-center justify-between gap-3 bg-inherit'>&larr; <IoIosAirplane className='text-4xl' /> &rarr;</button>
                         </div>
 
                         <div className='md:flex items-center justify-center gap-3'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '../../images/pexels1.png'
+import hero from '../../images/pexels1.webp'
 import Logo from '../../images/Logo.png'
 import { IoIosBed, IoIosAirplane, IoIosAdd, IoIosPaperPlane } from 'react-icons/io'
 import { Link } from 'react-router-dom'
