@@ -14,6 +14,9 @@ function Hero() {
   const [openTo, setOpenTo] = useState(false)
   const [departure, setDeparture] = useState("")
   const [returnDate, setReturnDate] = useState("")
+  const [passengerClass, setPassengerClass] = useState("")
+  const [trip, setTrip] = useState("")
+
 
 
   useEffect(() => {
@@ -119,17 +122,30 @@ function Hero() {
             </div>
 
             <div className='flex items-center justify-between gap-2'>
-            <input  type="date" 
-                    placeholder='Departure' 
-                    className='text-sm w-full p-2 border  rounded outline-none appearance-none' 
-                    onChange={(e)=> setDeparture(e.target.value)} 
-                    value={departure}/>
+              <input type="date"
+                placeholder='Departure' 
+                className='text-sm w-full p-2 border  rounded outline-none appearance-none'
+                onChange={(e) => setDeparture(e.target.value)}
+                value={departure} />
 
-            <input type="date" 
-                   placeholder='Return' 
-                   className='text-sm w-full p-2 border  rounded outline-none' 
-                   onChange={(e)=> setReturnDate(e.target.value)} 
-                   value={returnDate}/>
+              <input type="date"
+                placeholder='Return'
+                className='text-sm w-full p-2 border  rounded outline-none'
+                onChange={(e) => setReturnDate(e.target.value)}
+                value={returnDate} />
+            </div>
+            <div className='flex items-center justify-between gap-2 mt-2'>
+              <input type="text"
+                placeholder='Trip'
+                className='text-sm w-full p-2 border rounded outline-none'
+                onChange={(e) => setTrip(e.target.value)}
+                value={trip} />
+
+              <input type="text"
+                placeholder='Passenger-Class'
+                className='text-sm w-full p-2 border rounded outline-none'
+                onChange={(e) => setPassengerClass(e.target.value)}
+                value={passengerClass} />
             </div>
           </div>
 

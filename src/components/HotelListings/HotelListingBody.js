@@ -8,6 +8,7 @@ import landscape from '../../images/landscape.png'
 import lake from '../../images/lake.png'
 import trees from '../../images/trees.png'
 import palm from '../../images/palm.png'
+import { Link } from 'react-router-dom'
 
 
 function HotelListingBody() {
@@ -56,7 +57,7 @@ function HotelListingBody() {
                                 <p className='text-sm md:text-base'>Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your destination.</p>
                             </div>
 
-                            <button className='mt-4 md:mt-0 font-semibold text-xs rounded border p-2 border-teal-200'>See all</button>
+                            <Link to="/flight-listings"><button className='mt-4 md:mt-0 font-semibold text-xs rounded border p-2 border-teal-200'>See all</button></Link>
                         </div>
                     </div>
 

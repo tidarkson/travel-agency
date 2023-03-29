@@ -16,7 +16,7 @@ function PlanTrip() {
                         <p className='text-sm md:text-base'>Search Flights & Places Hire to our most popular destinations</p>
                     </div>
 
-                    <button className='mt-4 md:mt-0 font-semibold text-xs rounded border p-2 border-teal-200'>See more places</button>
+                    <Link to="/hotels"><button className='mt-4 md:mt-0 font-semibold text-xs rounded border p-2 border-teal-200'>See more places</button></Link>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 my-8 md:my-16">
@@ -30,8 +30,8 @@ function PlanTrip() {
                                     <div className='px-5'>
                                         <p className='my-5 font-bold'>{title}</p>
                                         <div className='flex items-center justify-center gap-5'>
-                                            <p className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag1}</p>
-                                            <p className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag2}</p>
+                                            <Link to="/flight-listings"><button className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag1}</button></Link>
+                                            <Link to="/hotel-listings"><button className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag2}</button></Link>
                                             <p className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag3}</p>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@ function PlanTrip() {
                         <div className='text-white flex flex-col items-center text-center gap-5 mx-auto mt-60 mb-20 lg:mt-80 max-w-lg backdrop-brightness-50 p-5 rounded-2xl'>
                             <h2 className='text-4xl font-bold tracking-widest'>Flights</h2>
                             <p className='text-sm'>Search Flights & Places Hire to our most popular destinations</p>
-                            <Link to={'/hotel-listings'}><button className='font-semibold text-sm text-black px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane /> Show flights
+                            <Link to={'/flight-listings'}><button className='font-semibold text-sm text-black px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><IoIosPaperPlane /> Show flights
                             </button></Link>
                             
                         </div>
