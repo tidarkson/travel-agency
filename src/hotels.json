@@ -1,0 +1,167 @@
+{
+    "data": [
+        {
+            "id":1,
+            "button": "All Places",
+            "details": [
+                {
+                    "id": 1,
+                    "image": "./images/hotel1.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id": 2,
+                    "image": "./images/hotel2.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id": 3,
+                    "image": "./images/hotel3.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 4,
+                    "image": "./images/hotel4.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 5,
+                    "image": "./images/hotel5.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 6,
+                    "image": "./images/hotel6.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 7,
+                    "image": "./images/hotel7.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 8,
+                    "image": "./images/hotel8.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                }
+            ]
+        },
+
+
+        {
+            "id":2,
+            "button": "Hotels",
+            "details": [
+                {
+                    "id" : 1,
+                    "image": "./images/hotel6.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 2,
+                    "image": "./images/hotel3.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 3,
+                    "image": "./images/hotel4.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                }
+            ]
+        },
+        
+        {
+            "id":3,
+            "button": "Motels",
+            "details": [
+                {
+                    "id" : 1,
+                    "image": "./images/hotel2.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 2,
+                    "image": "./images/hotel8.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                }
+            ]
+        },
+        {
+            "id":1,
+            "button": "Resort",
+            "details": [
+                {
+                    "id" : 5,
+                    "image": "./images/hotel5.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 6,
+                    "image": "./images/hotel6.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 7,
+                    "image": "./images/hotel7.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                },
+                {
+                    "id" : 8,
+                    "image": "./images/hotel8.png",
+                    "price": 220,
+                    "rating": "Very Good",
+                    "location": "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+                    "link": "View Place"
+                }
+            ]
+        }
+    ]
+}

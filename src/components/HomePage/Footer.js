@@ -30,18 +30,18 @@ function Footer() {
                     <img src={logo} alt="" />
                     <div >
                         <ul className='flex items-center justify-center gap-3 my-5'>
-                            <li><button><FaFacebook/></button></li>
-                            <li><button><FaTwitter/></button></li>
-                            <li><button><FaYoutube/></button></li>
-                            <li><button><FaInstagram/></button></li>
+                            <li key={5}><button><FaFacebook/></button></li>
+                            <li key={9}><button><FaTwitter/></button></li>
+                            <li key={7}><button><FaYoutube/></button></li>
+                            <li key={4}><button><FaInstagram/></button></li>
                         </ul>
                     </div>
                 </div>
                 <div className='md:grid md:grid-cols-2 xl:grid-cols-5 p-5 xl:px-20'>
-                    {items.data.map((item) => {
-                        const {id, title,contents}= item
+                    {items.data.map((item, index) => {
+                        const {title,contents}= item
                         return (
-                            <div key={id} className="mx-2">
+                            <div key={index} className="mx-2">
                                 <h2 className='font-bold my-2'>{title}</h2>
                                 <ul>
                                     {contents.map((content) =>

@@ -34,7 +34,8 @@ function HotelListing() {
                                 <button className='font-semibold text-sm px-3 py-2 flex items-center text-white justify-center gap-2 rounded-lg bg-inherit'><IoIosAdd /> Add Promo Code</button>
                             </div>
                             <div className=''>
-                                <button className='font-semibold text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><RiHotelFill />Show Places</button>
+                                <Link to="/hotels"><button className='font-semibold text-sm px-3 py-2 flex items-center justify-center gap-2 rounded-lg'><RiHotelFill />Show Places</button>
+</Link>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useSyncExternalStore } from 'react'
+import React, { useEffect, useState } from 'react'
 import hero from '../../images/pexels1.webp'
 import Logo from '../../images/Logo.png'
 import { IoIosBed, IoIosAirplane, IoIosAdd, IoIosPaperPlane } from 'react-icons/io'
@@ -9,11 +9,7 @@ function Hero() {
 
   const [city, setCity] = useState([])
   const [inputValue, setInputValue] = useState("")
-  const [inputValueTo, setInputValueTo] = useState("")
   const [open, setOpen] = useState(false)
-  const [openTo, setOpenTo] = useState(false)
-  const [departure, setDeparture] = useState("")
-  const [returnDate, setReturnDate] = useState("")
 
 
   useEffect(() => {
@@ -68,49 +64,24 @@ function Hero() {
             </div>
           </div>
 
-          <div className=''>
-
-            <div className='px-2 mb-2 bg-white rounded'>
+          <div className='grid grid-cols-2 md:grid-cols-3 lg:flex items-center justify-center my-8 gap-5'>
+            <div className='rounded'>
               <input type="text"
                 placeholder='From'
-                className='text-sm p-2 outline-none w-full md:w-48'
-                onChange={(e) => setInputValueTo(e.target.value.toLowerCase())}
-                value={inputValueTo}
+                className='text-sm p-2 outline-none'
+                onChange={(e) => setInputValue(e.target.value.toLowerCase())}
+                value={inputValue}
                 onClick={() => setOpen(!open)} />
 
 
-              <ul className={`bg-white overflow-y-auto md:w-44 ${open ? ' h-10' : 'h-0'}`}>
-                {city?.map((cite, index) => {
-                  const { capital, name } = cite
-
-                  return (
-                    <li key={index}
-                      className={`p-2 text-xs cursor-pointer hover:bg-slate-700 hover:text-white ${capital?.toLowerCase().startsWith(inputValue) || name?.toLowerCase().startsWith(inputValueTo) ? "block" : "hidden"}`}
-                      onClick={() => { setInputValueTo(capital, name); setOpen(false) }}
-                    >{capital}, {name}</li>
-
-                  )
-                })}
-              </ul>
-            </div>
-
-            <div className='px-2 mb-2 bg-white rounded'>
-              <input type="text"
-                placeholder='To'
-                className='text-sm p-2 outline-none rounded w-full md:w-48'
-                onChange={(e) => setInputValue(e.target.value.toLowerCase())}
-                value={inputValue}
-                onClick={() => setOpenTo(!openTo)} />
-
-
-              <ul className={`bg-white overflow-y-auto w-32 md:w-44 ${openTo ? ' h-10' : 'h-0'}`}>
+              <ul className={`bg-white overflow-y-auto w-32 md:w-44 ${open ? ' h-10' : 'h-0'}`}>
                 {city?.map((cite, index) => {
                   const { capital, name } = cite
 
                   return (
                     <li key={index}
                       className={`p-2 text-xs cursor-pointer hover:bg-slate-700 hover:text-white ${capital?.toLowerCase().startsWith(inputValue) || name?.toLowerCase().startsWith(inputValue) ? "block" : "hidden"}`}
-                      onClick={() => { setInputValue(capital, name); setOpenTo(false) }}
+                      onClick={() => { setInputValue(capital, name); setOpen(false) }}
                     >{capital}, {name}</li>
 
                   )
@@ -118,19 +89,33 @@ function Hero() {
               </ul>
             </div>
 
-            <div className='flex items-center justify-between gap-2'>
-            <input  type="date" 
-                    placeholder='Departure' 
-                    className='text-sm w-full p-2 border  rounded outline-none appearance-none' 
-                    onChange={(e)=> setDeparture(e.target.value)} 
-                    value={departure}/>
+            <div className='rounded'>
+              <input type="text"
+                placeholder='From'
+                className='text-sm p-2 outline-none inline-block'
+                onChange={(e) => setInputValue(e.target.value.toLowerCase())}
+                value={inputValue}
+                onClick={() => setOpen(!open)} />
 
-            <input type="date" 
-                   placeholder='Return' 
-                   className='text-sm w-full p-2 border  rounded outline-none' 
-                   onChange={(e)=> setReturnDate(e.target.value)} 
-                   value={returnDate}/>
+
+              <ul className={`bg-white overflow-y-auto w-32 md:w-44 ${open ? ' h-10' : 'h-0'}`}>
+                {city?.map((cite, index) => {
+                  const { capital, name } = cite
+
+                  return (
+                    <li key={index}
+                      className={`p-2 text-xs cursor-pointer hover:bg-slate-700 hover:text-white ${capital?.toLowerCase().startsWith(inputValue) || name?.toLowerCase().startsWith(inputValue) ? "block" : "hidden"}`}
+                      onClick={() => { setInputValue(capital, name); setOpen(false) }}
+                    >{capital}, {name}</li>
+
+                  )
+                })}
+              </ul>
             </div>
+            {/* <input type="text" placeholder='To' className='text-sm p-2 border  rounded outline-none' />
+            <input type="text" placeholder='Trip' className='text-sm p-2 border  rounded outline-none' />
+            <input type="text" placeholder='Departure' className='text-sm p-2 border  rounded outline-none' />
+            <input type="text" placeholder='Return' className='text-sm p-2 border  rounded outline-none' /> */}
           </div>
 
           <div className='flex items-center justify-end gap-5 my-5'>
