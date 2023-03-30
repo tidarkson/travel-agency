@@ -24,7 +24,6 @@ function Hero() {
       const res = await fetch(`https://restcountries.com/v2/all?fields=name,capital`)
       const data = await res.json()
       setCity(data)
-      console.log(data)
     }
     fetchCity()
   }, []);

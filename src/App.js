@@ -22,7 +22,7 @@ function App() {
             <Route path="/checkout" element={<Checkout/>}/>
             <Route path="/hotels" element={<Hotels/>}/>
           </Routes>
-          {/* <Footer/> */}
+          <Footer/>
       </BrowserRouter>      
     </>
   );

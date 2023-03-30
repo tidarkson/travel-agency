@@ -30,10 +30,10 @@ function Footer() {
                     <img src={logo} alt="" />
                     <div >
                         <ul className='flex items-center justify-center gap-3 my-5'>
-                            <li key={5}><button><FaFacebook/></button></li>
-                            <li key={9}><button><FaTwitter/></button></li>
-                            <li key={7}><button><FaYoutube/></button></li>
-                            <li key={4}><button><FaInstagram/></button></li>
+                            <li ><button><FaFacebook/></button></li>
+                            <li ><button><FaTwitter/></button></li>
+                            <li ><button><FaYoutube/></button></li>
+                            <li ><button><FaInstagram/></button></li>
                         </ul>
                     </div>
                 </div>
@@ -44,8 +44,8 @@ function Footer() {
                             <div key={index} className="mx-2">
                                 <h2 className='font-bold my-2'>{title}</h2>
                                 <ul>
-                                    {contents.map((content) =>
-                                        <li className='text-xs md:text-sm tracking-widest'>{content}</li>
+                                    {contents.map((content, index) =>
+                                        <li key={index} className='text-xs md:text-sm tracking-widest'>{content}</li>
                                      )}
                                 </ul>
                             </div>
