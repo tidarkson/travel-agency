@@ -6,11 +6,14 @@ import { IoIosAirplane, IoIosAddCircleOutline } from 'react-icons/io'
 import { MdOutlineAirlineSeatReclineNormal, MdFastfood } from 'react-icons/md'
 import emirate from '../../images/emirates-icon.png'
 import airbus from '../../images/airbus.png'
+import {useParams} from 'react-router-dom'
 
 
 
 
 function Checkout() {
+  const {name} = useParams()
+  
   return (
     <>
       <Header />
@@ -21,7 +24,7 @@ function Checkout() {
             <article className='rounded-xl shadow shadow-slate-300 my-10 mb-20 p-5 flex-grow'>
               <article className='flex items-center justify-between py-2'>
                 <div>
-                  <h2 className='font-bold text-3xl'>Emirates A380 Airbus</h2>
+                  <h2 className='font-bold text-3xl'>{name} A380 Airbus</h2>
                 </div>
 
                 <div>
@@ -38,7 +41,7 @@ function Checkout() {
                 <div className='flex items-center justify-start gap-5 border border-slate-200 rounded px-5 py-2'>
                   <img src={emirate} alt="" />
                   <div>
-                    <h3 className='text-2xl font-semibold'>Emirates</h3>
+                    <h3 className='text-2xl font-semibold'>{name}</h3>
                     <small>Airbus A320</small>
                   </div>
                 </div>
@@ -118,7 +121,7 @@ function Checkout() {
               <img src={airbus} alt="" />
               <div>
                 <small>Economy</small>
-                <h2 className='font-bold text-2xl'>Emirates A380 Airbus</h2>
+                <h2 className='font-bold text-2xl'>{name} A380 Airbus</h2>
                 <div className='flex items-center justify-start gap-2'>
                   <small className='p-1 border'>4.2</small>
                   <small className='font-bold'>Very Good</small>

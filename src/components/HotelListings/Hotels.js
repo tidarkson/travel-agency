@@ -184,7 +184,7 @@ function Listings() {
 
                                             <div className='flex items-center justify-start gap-5 my-10 py-3'>
                                                 <small className='border rounded p-2 text-lg border-teal-400'><AiOutlineHeart /></small>
-                                                <Link to={'/flight-details'} className="block"><button className='text-sm px-3 py-2 rounded-lg w-full'>{link}</button></Link>
+                                                <Link to={''} className="block"><button className='text-sm px-3 py-2 rounded-lg w-full'>{link}</button></Link>
                                             </div>
                                         </div>
                                     </div>

@@ -16,7 +16,7 @@ function PlanTrip() {
                         <p className='text-sm md:text-base'>Search Flights & Places Hire to our most popular destinations</p>
                     </div>
 
-                    <Link to="/hotels"><button className='mt-4 md:mt-0 font-semibold text-xs rounded border p-2 border-teal-200'>See more places</button></Link>
+                    <Link to="/hotel-listings"><button className='mt-4 md:mt-0 font-semibold text-xs rounded border p-2 border-teal-200'>See more places</button></Link>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 my-8 md:my-16">
@@ -31,7 +31,7 @@ function PlanTrip() {
                                         <p className='my-5 font-bold'>{title}</p>
                                         <div className='flex items-center justify-center gap-5'>
                                             <Link to="/flight-listings"><button className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag1}</button></Link>
-                                            <Link to="/hotel-listings"><button className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag2}</button></Link>
+                                            <Link to="/hotels"><button className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag2}</button></Link>
                                             <p className='text-xs hover:underline px-1 rounded bg-slate-100 cursor-pointer hover:bg-teal-100'>{tag3}</p>
                                         </div>
                                     </div>

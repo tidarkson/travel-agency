@@ -10,4 +10,4 @@ function FlightDetails() {
   )
 }
 
-export default FlightDetails
+export default FlightDetails 

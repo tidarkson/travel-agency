@@ -6,91 +6,107 @@
             "details": [
                 {
                     "id": 1,
+                    "name": "Emirates",
                     "image": "./images/emirates.png",
-                    "price": 104,
+                    "price": 890,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/6708045/pexels-photo-6708045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": 2,
+                    "name": "Fly Dubai",
                     "image": "./images/dubai.png",
-                    "price": 104,
+                    "price": 220,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/11190489/pexels-photo-11190489.jpeg"
                 },
                 {
                     "id": 3,
+                    "name": "Qatar Airways",
                     "image": "./images/qatar.png",
-                    "price": 104,
+                    "price": 350,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/11644229/pexels-photo-11644229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 4,
+                    "name": "Etihad",
                     "image": "./images/etihad.png",
-                    "price": 104,
+                    "price": 440,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/11190489/pexels-photo-11190489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 5,
+                    "name": "British Airways",
                     "image": "./images/british.png",
-                    "price": 104,
+                    "price": 270,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/164589/pexels-photo-164589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 6,
+                    "name": "Turkish Airlines",
                     "image": "./images/turkish.png",
-                    "price": 104,
+                    "price": 110,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/8250524/pexels-photo-8250524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 7,
+                    "name": "Air France",
                     "image": "./images/france.png",
-                    "price": 104,
+                    "price": 240,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": ""
                 },
                 {
                     "id" : 8,
+                    "name": "Lufthansa",
                     "image": "./images/lufthansa.png",
-                    "price": 104,
+                    "price": 185,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/358220/pexels-photo-358220.jpeg"
                 }
             ]
         },
@@ -102,36 +118,42 @@
             "details": [
                 {
                     "id" : 1,
+                    "name": "Turkish Airlines",
                     "image": "./images/turkish.png",
-                    "price": 104,
+                    "price": 110,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/8250524/pexels-photo-8250524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 2,
+                    "name": "Qatar Airways",
                     "image": "./images/qatar.png",
-                    "price": 104,
+                    "price": 350,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/11644229/pexels-photo-11644229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 3,
+                    "name": "Etihad",
                     "image": "./images/etihad.png",
-                    "price": 104,
+                    "price": 440,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/11190489/pexels-photo-11190489.jpeg"
                 }
             ]
         },
@@ -142,25 +164,29 @@
             "details": [
                 {
                     "id" : 1,
+                    "name": "Fly Dubai",
                     "image": "./images/dubai.png",
-                    "price": 104,
+                    "price": 220,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/6708045/pexels-photo-6708045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 2,
+                    "name": "Lufthansa",
                     "image": "./images/lufthansa.png",
-                    "price": 104,
+                    "price": 185,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/358220/pexels-photo-358220.jpeg"
                 }
             ]
         },
@@ -170,49 +196,57 @@
             "details": [
                 {
                     "id" : 5,
+                    "name": "British Airways",
                     "image": "./images/british.png",
-                    "price": 104,
+                    "price": 270,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/164589/pexels-photo-164589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 6,
+                    "name": "Turkish Airways",
                     "image": "./images/turkish.png",
-                    "price": 104,
+                    "price": 110,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/8250524/pexels-photo-8250524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id" : 7,
+                    "name": "Air France",
                     "image": "./images/france.png",
-                    "price": 104,
+                    "price": 240,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": ""
                 },
                 {
                     "id" : 8,
+                    "name": "Lufthansa",
                     "image": "./images/lufthansa.png",
-                    "price": 104,
+                    "price": 185,
                     "rating": "Very Good",
                     "departure": "12:00pm",
                     "arrival": "1:28pm",
                     "stops" : "non stop",
                     "duration": "2h 28min",
-                    "link": "View Deals"
+                    "link": "View Deals",
+                    "large": "https://images.pexels.com/photos/358220/pexels-photo-358220.jpeg"
                 }
             ]
         }
     ]
-}
+} 

@@ -18,11 +18,11 @@ function App() {
             <Route path="/" element={<LandingPage/>}/>
             <Route path="/flight-listings" element={<FlightListings/>}/>
             <Route path="/hotel-listings" element={<HotelListings/>}/>
-            <Route path="/flight-details" element={<FlightDetails/>}/>
+            <Route path="/:name" element={<FlightDetails/>}/>
             <Route path="/checkout" element={<Checkout/>}/>
             <Route path="/hotels" element={<Hotels/>}/>
           </Routes>
-          <Footer/>
+          {/* <Footer/> */}
       </BrowserRouter>      
     </>
   );

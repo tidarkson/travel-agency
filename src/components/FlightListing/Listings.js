@@ -171,7 +171,7 @@ function Listings() {
                 <small>sort by <span className='font-bold'>Recommended</span></small>
               </div>
               {details.map((detail) => {
-                const { id, image, price, rating, departure, arrival, stops, duration, link } = detail
+                const { id, image, price, rating, departure, arrival, stops, duration, link, name } = detail
 
                 return (
                   <div key={id} className="md:flex items-center justify-start rounded-xl shadow shadow-slate-300 my-2 p-2 md:p-5">
@@ -199,7 +199,7 @@ function Listings() {
 
                       <div className='flex items-center justify-start gap-5 my-10 py-3'>
                         <small className='border rounded p-2 text-lg border-teal-400'><AiOutlineHeart /></small>
-                        <Link to={'/flight-details'}><button className='text-sm px-3 py-2 rounded-lg w-full'>{link}</button></Link>
+                        <Link to={`/${name}`}><button className='text-sm px-3 py-2 rounded-lg w-full'>{link}</button></Link>
                       </div>
                     </div>
                   </div>
